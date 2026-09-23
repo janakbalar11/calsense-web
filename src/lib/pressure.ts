@@ -5,15 +5,17 @@ import { clamp, lerp } from "./rng";
 export const FOOT_VB = { w: 100, h: 260 };
 
 /**
- * Stylised right-foot outline. The left foot is drawn by mirroring on X.
- * Kept deliberately soft/abstract — this is a friendly consumer graphic,
- * not an anatomical chart.
+ * Right-foot/shoe-insole outline: rounded heel, a pulled-in medial arch, a
+ * wide ball of the foot, and a tapered toe box (big toe protruding) — a
+ * pedobarography-style silhouette rather than an abstract pill shape. The
+ * left foot is drawn by mirroring on X.
  */
 export const FOOT_OUTLINE =
-  "M46,10 C33,8 22,15 19,31 C16,46 18,60 22,76 C15,92 12,116 15,143 " +
-  "C17,168 21,194 30,218 C36,236 47,250 60,248 C75,246 86,232 87,209 " +
-  "C88,187 83,166 81,144 C79,122 85,102 83,82 C81,62 83,42 77,27 " +
-  "C72,14 59,9 46,10 Z";
+  "M72,6 C82,7 90,12 90,20 C93,32 94,42 94,50 C95,68 94,82 92,95 " +
+  "C89,118 78,130 74,145 C70,162 80,180 85,195 C88,212 83,225 78,235 " +
+  "C68,248 60,254 50,256 C40,254 32,248 22,235 C17,225 15,212 15,195 " +
+  "C13,180 12,165 12,150 C11,135 10,115 10,100 C10,85 11,70 12,55 " +
+  "C13,42 15,30 18,22 C22,14 28,9 35,6 C45,4 60,4 72,6 Z";
 
 export const FOOT_REGIONS: RegionMeta[] = [
   { id: "big_toe", label: "Big toe", cx: 66, cy: 22 },

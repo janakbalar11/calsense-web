@@ -67,7 +67,7 @@ export function FootField({
       const sx = w / FOOT_VB.w;
       const sy = h / FOOT_VB.h;
       ctx.save();
-      if (s.foot === "left") {
+      if (s.foot === "right") {
         ctx.translate(w, 0);
         ctx.scale(-sx, sy);
       } else {

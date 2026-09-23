@@ -33,7 +33,7 @@ export function FootMap({
       {interactive && (
         <div className="absolute inset-0">
           {FOOT_REGIONS.map((r) => {
-            const leftPct = (foot === "left" ? FOOT_VB.w - r.cx : r.cx) / FOOT_VB.w;
+            const leftPct = (foot === "right" ? FOOT_VB.w - r.cx : r.cx) / FOOT_VB.w;
             const topPct = r.cy / FOOT_VB.h;
             const isSel = selected === r.id;
             return (
